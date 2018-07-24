@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/styles/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+
+        <div class="row">
+
+          <section class="col-xs-12 col-md-3 dashboard__user-nav">
+            <nav>
+              <ul>
+                <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+
+                <li><a href="#"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+
+                <li  class="active"><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li><a href="#"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-md-9 dashboard__user" role="main">
+            <div class="user-orders">
+              <div class="box box-info">
+                <div class="box-header with-border">
+                  <h3 class="box-title pt-2 mb-2">Últimas órdenes</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class="thead-dark">
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Carga</th>
+                        <th>Tipo</th>
+                        <th>Status</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                        <td>CDMX -> Tijuana</td>
+                        <td>---</td>
+                        <td><span class="label label-success">Shipped</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                        <td>Denver -> Aurora</td>
+                        <td>---</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>Guadalajara -> Baja California</td>
+                        <td>---</td>
+                        <td><span class="label label-danger">Delivered</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>Morelos -> Yucatán </td>
+                        <td>---</td>
+                        <td><span class="label label-info">Processing</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                        <td>Mérida -> Tampico</td>
+                        <td>---</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>Zacatecas -> Morelos</td>
+                        <td>---</td>
+                        <td><span class="label label-danger">Delivered</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                        <td>Edo. de México -> San Luis</td>
+                        <td>---</td>
+                        <td><span class="label label-success">Shipped</span></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <a href="#" class="btn btn-sm btn-default btn-flat pull-right">Ver todas las órdenes</a>
+                </div>
+                <!-- /.box-footer -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- END MAIN -->
+
+      <!-- FOOTER -->
+    </div>
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <ion-icon name="pin"></ion-icon>
+                    Ciudad de México, 227 MARION STREET
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="call"></ion-icon>
+                    1-888-123-4567
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="mail"></ion-icon>
+                    support@enfa.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="time"></ion-icon>
+                    Lunes - Sábado, 9:00 - 19:00 hrs
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Historia</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Nuestro Equipo</a></li>
+              <li><a href="#">Invertir en ENFA</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="copy text-center">
+          © 2018 ENFA Delivery.
+        </div>
+        <div class="terms text-center">
+          <a href="#">Términos y Condiciones</a>
+        </div>
+      </section>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>

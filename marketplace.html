@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/styles/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+
+          <div class="row">
+
+            <section class="col-xs-12 col-md-3 dashboard__user-nav">
+              <nav>
+                <ul>
+                  <li class="active"><a href="#"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+
+                  <li><a href="#"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                  <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                  <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+
+
+                  <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                  <li><a href="#"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                  <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                  <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="col-md-9 dashboard__user" role="main">
+              <div class="dashboard__user__results">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-aqua"><ion-icon name="settings"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">CPU Traffic</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-red"><ion-icon name="logo-facebook"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Likes</span>
+                        <span class="info-box-number">41,410</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-yellow"><ion-icon name="people"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">New Members</span>
+                        <span class="info-box-number">2,000</span>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-green"><ion-icon name="cart"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Sales</span>
+                        <span class="info-box-number">760</span>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                </div>
+                </div>
+                <form class="form-inline form__dashboard">
+                  <div class="form-group flex-column align-items-start">
+                    <label for="">Origen</label>
+                    <input type="text" class="form-control" value="CDMX">
+                  </div>
+                  <div class="form-group flex-column align-items-start">
+                    <label for="">Destino</label>
+                    <input type="text" class="form-control" value="Tijuana">
+                  </div>
+                  <div class="form-group flex-column align-items-start">
+                    <label for="">Fecha</label>
+                    <input type="date" class="form-control" >
+                  </div>
+                  <div class="form-group flex-column align-items-start">
+                    <label for="">Tipo</label>
+                    <select class="custom-select">
+                      <option selected>Opción uno</option>
+                      <option value="1">Opción dos</option>
+                      <option value="2">Opción tres</option>
+                    </select>
+                  </div>
+                </form>
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Tipo</th>
+                      <th scope="col">Origen</th>
+                      <th scope="col">Destino</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>disponible</td>
+                      <td>tipo 1</td>
+                      <td>CDMX</td>
+                      <td>Tijuana</td>
+                      <td><a href="#">Cotizar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>disponible</td>
+                      <td>tipo 2</td>
+                      <td>Thornton</td>
+                      <td>Denver</td>
+                      <td><a href="#">Cotizar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>disponible</td>
+                      <td>tipo 3</td>
+                      <td>Guadalajara</td>
+                      <td>San Luis</td>
+                      <td><a href="#">Cotizar</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </div>
+            </section>
+          </div>
+        </main>
+      <!-- END MAIN -->
+
+      <!-- FOOTER -->
+    </div>
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <ion-icon name="pin"></ion-icon>
+                    Ciudad de México, 227 MARION STREET
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="call"></ion-icon>
+                    1-888-123-4567
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="mail"></ion-icon>
+                    support@enfa.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="time"></ion-icon>
+                    Lunes - Sábado, 9:00 - 19:00 hrs
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Historia</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Nuestro Equipo</a></li>
+              <li><a href="#">Invertir en ENFA</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="copy text-center">
+          © 2018 ENFA Delivery.
+        </div>
+        <div class="terms text-center">
+          <a href="#">Términos y Condiciones</a>
+        </div>
+      </section>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>
