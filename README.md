@@ -12,7 +12,7 @@ SCSS
 > This ASCII diagram represents the structure of the ```scss``` directory.
 
 ```
-─── scss/
+─── styles/
   ├── app.scss
   ├──── components/
   │
