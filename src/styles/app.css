@@ -75,8 +75,8 @@ label {
   max-width: 8em; }
 
 header li {
-  padding-right: 10px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  padding-right: 10px; }
 header ion-icon {
   color: #757575; }
 
@@ -85,8 +85,8 @@ header ion-icon {
 
 nav {
   background-color: #212529;
-  border-bottom: 2px solid #FFA000;
-  box-shadow: -2px 1px 13px 1px black; }
+  box-shadow: -2px 1px 13px 1px black;
+  border-bottom: 2px solid #FFA000; }
   nav a {
     color: #fff; }
   nav li {
@@ -95,14 +95,14 @@ nav {
       background-color: #FFA000; }
 
 .main-header.navbar {
+  border: none;
+  margin-bottom: 0;
+  min-height: 50px;
+  border-radius: 0;
+  margin-left: 230px;
   -webkit-transition: margin-left .3s ease-in-out;
   -o-transition: margin-left .3s ease-in-out;
-  transition: margin-left .3s ease-in-out;
-  margin-bottom: 0;
-  margin-left: 230px;
-  border: none;
-  min-height: 50px;
-  border-radius: 0; }
+  transition: margin-left .3s ease-in-out; }
 
 footer {
   font-size: 12px;
@@ -169,8 +169,8 @@ footer {
   background: linear-gradient(to right, #f2994a, #f2c94c); }
 .home .services__ship {
   color: #fff;
-  background-image: url("../images/bg-1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-image: url("../images/bg-1.jpg"); }
 
 .logo-dash {
   max-width: 80px; }
