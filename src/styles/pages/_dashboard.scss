@@ -1,13 +1,34 @@
+.dashboard__user {
+  padding: 2rem 3rem;
+}
 .logo-dash {
   max-width: 80px;
 }
+.-delete {
+  color: #8c1616;
+}
 .dashboard {
+  .pt-checkbox {
+    padding-top: 40px !important;
+  }
+  .m-subheader {
+    &.m-subheader__title {
+      display: inline-block;
+      padding: 7px 25px 7px 0;
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 1.55rem;
+      font-weight: 500;
+      vertical-align: middle;
+      margin: 0 15px 0 0;
+      color: #3f4047;
+    }
+  }
   table {
     background: #fff;
   }
   background-color: #ecf0f5;
   ion-icon {
-    margin-top: 18px;
     margin-right: 8px;
     margin-left: 10px;
   }
@@ -19,7 +40,7 @@
     margin-bottom: 18px;
   }
   .form-group {
-    margin: 0 15px;
+    padding: 10px;
   }
   .card {
     margin: 2em 10px;
@@ -47,4 +68,23 @@
       margin: 0;
       line-height: 1;
   }
+  .m-portlet {
+    -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+    background-color: #fff;
+    padding: 0 2.2rem;
+    margin-top: 4rem;
+  }
+  .m-checkbox {
+    color: #575962;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
 }

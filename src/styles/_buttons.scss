@@ -1,8 +1,8 @@
 .btn {
   border-radius: 0.05rem;
+  color: #fff;
 }
 .btn-primary {
-    color: #fff;
     background: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
     border: transparent;
     padding: 10px 20px;
@@ -43,4 +43,23 @@
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
+}
+
+.m-btn--air {
+  -webkit-box-shadow: 0 5px 10px 2px rgba(244,81,108,.19)!important;
+  box-shadow: 0 5px 10px 2px rgba(244,81,108,.19)!important;
+}
+
+.m-btn--pill {
+  border-radius: 60px;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #f4516c;
+  border-color: #f4516c;
 }

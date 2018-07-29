@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="src/styles/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/styles/app.css">
     <title>Enfa Delivery</title>
   </head>
@@ -36,13 +36,11 @@
             <nav>
               <ul>
                 <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
-
                 <li><a href="#"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
                 <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
                 <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
-
-                <li  class="active"><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
-                <li><a href="#"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li class="active"><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
                 <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
                 <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
               </ul>
@@ -51,9 +49,9 @@
           <section class="col-md-9 dashboard__user" role="main">
             <div class="user-orders">
               <div class="box box-info">
-                <div class="box-header with-border">
-                  <h3 class="box-title pt-2 mb-2">Últimas órdenes</h3>
-                </div>
+                  <div class="subheader d-flex justify-content-between">
+                    <h3 class="m-subheader__title m-subheader__title--separator">Tus Últimos Envios</h3>
+                  </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                   <div class="table-responsive">
