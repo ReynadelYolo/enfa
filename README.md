@@ -2,9 +2,9 @@
 Check out the **(http://enfa.surge.sh/)** to see it in action!
 
 ## Installation
-npm install__
-npm run dev
-Open your browser  **(http://localhost:1234/)** 
+npm install 
+npm run dev 
+Open your browser  **(http://localhost:1234/)**  
 
 
 ## Style Guides
