@@ -1,5 +1,9 @@
 .logo {
-  max-width: 8em;
+  max-width: 8rem;
+
+  @media (max-width: 767.98px) {
+    max-width: 7rem;
+  }
 }
 header {
   li {
@@ -8,6 +12,16 @@ header {
   }
   ion-icon {
     color: #757575;
+  }
+  .user-sign {
+    a {
+      padding: 0 1rem;
+      font-weight: bold;
+    }
+
+    &.-up {
+      color: $yellow-gold;
+    }
   }
 }
 .header__support {

@@ -33,15 +33,12 @@
           <div class="row">
 
             <section class="col-xs-12 col-md-3 dashboard__user-nav">
-              <nav>
+              <nav class="menu-desktop">
                 <ul>
                   <li class="active"><a href="#"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
-
                   <li><a href="#"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
                   <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
                   <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
-
-
                   <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
                   <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
                   <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
@@ -51,7 +48,7 @@
             </section>
             <section class="col-md-9 dashboard__user" role="main">
               <div class="dashboard__user__results">
-                <div class="row">
+                <div class="row d-none">
                   <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box">
                       <span class="info-box-icon bg-aqua"><ion-icon name="settings"></ion-icon></span>
@@ -92,25 +89,39 @@
                     </div>
                 </div>
                 </div>
-                <form class="form-inline form__dashboard">
-                  <div class="form-group flex-column align-items-start">
+                <form class="row form__dashboard">
+                  <div class="col-xs-12  col-md-3">
                     <label for="">Origen</label>
                     <input type="text" class="form-control" value="CDMX">
                   </div>
-                  <div class="form-group flex-column align-items-start">
+                  <div class="col-xs-12  col-md-3">
                     <label for="">Destino</label>
                     <input type="text" class="form-control" value="Tijuana">
                   </div>
-                  <div class="form-group flex-column align-items-start">
+                  <div class="col-xs-12  col-md-2">
                     <label for="">Fecha</label>
-                    <input type="date" class="form-control" >
+                    <input type="date" class="form-control">
                   </div>
-                  <div class="form-group flex-column align-items-start">
+                  <div class="col-xs-12  col-md-2">
                     <label for="">Tipo</label>
                     <select class="custom-select">
-                      <option selected>Opción uno</option>
-                      <option value="1">Opción dos</option>
-                      <option value="2">Opción tres</option>
+                      <option selected>Caja seca</option>
+                      <option value="1">Caja refigerada</option>
+                      <option value="2">Otro</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-md-2">
+                    <label for="">Tamaño carga</label>
+                    <select class="custom-select">
+                      <option selected>Todas</option>
+                      <option value="1">48 ft</option>
+                      <option value="2">53ft</option>
+                      <option value="3">Full</option>
+                      <option value="4">Torton</option>
+                      <option value="5">Rabón</option>
+                      <option value="6">Camioneta 5.5</option>
+                      <option value="7">Camioneta 3.5</option>
+                      <option value="8">Camioneta 1.5</option>
                     </select>
                   </div>
                 </form>
@@ -120,8 +131,8 @@
                       <th scope="col">Id</th>
                       <th scope="col">Status</th>
                       <th scope="col">Tipo</th>
-                      <th scope="col">Origen</th>
-                      <th scope="col">Destino</th>
+                      <th scope="col">Carga</th>
+                      <th scope="col">Tamaño de carga</th>
                       <th scope="col"></th>
                     </tr>
                   </thead>
@@ -130,25 +141,25 @@
                       <th scope="row">1</th>
                       <td>disponible</td>
                       <td>tipo 1</td>
-                      <td>CDMX</td>
-                      <td>Tijuana</td>
-                      <td><a href="#">Cotizar</a></td>
+                      <td>CDMX <ion-icon name="arrow-round-forward"></ion-icon> Tijuana</td>
+                      <td>48 ft</td>
+                      <td><a class="quote-cargo" href="#">Cotizar</a></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>disponible</td>
                       <td>tipo 2</td>
-                      <td>Thornton</td>
-                      <td>Denver</td>
-                      <td><a href="#">Cotizar</a></td>
+                      <td>Thornton <ion-icon name="arrow-round-forward"></ion-icon> Denver</td>
+                      <td>48 ft</td>
+                      <td><a class="quote-cargo" href="#">Cotizar</a></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>disponible</td>
                       <td>tipo 3</td>
-                      <td>Guadalajara</td>
-                      <td>San Luis</td>
-                      <td><a href="#">Cotizar</a></td>
+                      <td>Guadalajara <ion-icon name="arrow-round-forward"></ion-icon> San Luis</td>
+                      <td>Rabón</td>
+                      <td><a class="quote-cargo" href="#">Cotizar</a></td>
                     </tr>
                   </tbody>
                 </table>

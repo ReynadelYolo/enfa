@@ -2,13 +2,15 @@
   border-radius: 0.05rem;
   color: #fff;
 }
-.btn-primary {
+/*.btn-primary {
     background: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
     border: transparent;
     padding: 10px 20px;
     &:hover {
       background-color: #000;
     }
+}*/
+.cargo-button {
 }
 .btn-outline-primary {
     color: $primary-dark;
