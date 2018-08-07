@@ -9,12 +9,15 @@ li {
   list-style-type: none; }
 
 a {
+  color: #212529;
+  text-decoration: none;
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
   -ms-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  color: #212529; }
+  transition: color 0.3s ease-in-out; }
+  a:hover {
+    text-decoration: none; }
 
 ion-icon {
   font-size: 20px;
@@ -28,17 +31,21 @@ label {
 .form-control {
   border-radius: 0; }
 
+section {
+  padding-bottom: 4rem; }
+
 .btn {
   border-radius: 0.05rem;
   color: #fff; }
 
-.btn-primary {
-  background: linear-gradient(to right, #f2994a, #f2c94c);
-  border: transparent;
-  padding: 10px 20px; }
-  .btn-primary:hover {
-    background-color: #000; }
-
+/*.btn-primary {
+    background: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+    border: transparent;
+    padding: 10px 20px;
+    &:hover {
+      background-color: #000;
+    }
+}*/
 .btn-outline-primary {
   color: #212529;
   background-color: transparent;
@@ -87,27 +94,45 @@ label {
   border-color: #f4516c; }
 
 .logo {
-  max-width: 8em; }
+  max-width: 8rem; }
+  @media (max-width: 767.98px) {
+    .logo {
+      max-width: 7rem; } }
 
 header li {
   padding-left: 5px;
   padding-right: 10px; }
 header ion-icon {
   color: #757575; }
+header .user-sign a {
+  padding: 0 1rem;
+  font-weight: bold; }
+header .user-sign.-up {
+  color: #FFA000; }
 
 .header__support {
   font-size: 13px; }
 
-nav {
+.menu-desktop {
   background-color: #212529;
   box-shadow: -2px 1px 13px 1px black;
   border-bottom: 2px solid #FFA000; }
-  nav a {
+  .menu-desktop a {
     color: #fff; }
-  nav li {
-    padding: 1em; }
-    nav li:hover {
+    .menu-desktop a:hover {
+      text-decoration: none; }
+  .menu-desktop li {
+    padding: 1em;
+    transition: background 0.3s ease-in-out; }
+    .menu-desktop li:hover {
       background-color: #FFA000; }
+
+.menu-mobile {
+  padding: 15px 10px;
+  text-align: right;
+  justify-content: flex-end; }
+  .menu-mobile .menu-icon {
+    font-size: 4.5rem; }
 
 .main-header.navbar {
   border: none;
@@ -139,44 +164,63 @@ footer {
   background: #131313;
   margin: -15px; }
 
-.home .welcome {
+.home .welcome-bg {
   height: 85vh;
   overflow: hidden;
   position: relative; }
-  .home .welcome input {
-    margin: 0 10px; }
-.home .welcome__bg-img {
+  .home .welcome-bg input {
+    margin: 10px 0; }
+    @media (max-width: 768px) {
+      .home .welcome-bg input {
+        width: 100%; } }
+    @media (min-width: 768px) {
+      .home .welcome-bg input {
+        margin: 1rem; } }
+  .home .welcome-bg .custom-select {
+    margin-top: 20px; }
+.home .welcome-bg.-img {
+  width: 100%;
+  height: 100%;
   z-index: -1;
   filter: blur(1px);
   position: absolute; }
-.home .welcome__overlay {
-  padding-top: 10%;
-  position: inherit; }
-  .home .welcome__overlay .title {
-    padding: 3rem;
-    background: #a09d9d4d; }
-.home .welcome__form {
+.home .welcome-bg .title {
+  padding: 3rem;
+  background: #a09d9d4d; }
+  .home .welcome-bg .title p {
+    color: #fff; }
+.home .welcome-bg .icon-cargo.-button {
+  width: 100%; }
+.home form {
+  width: 100%;
   padding: 10px;
   margin-top: 2em;
   background: #fff; }
-  .home .welcome__form input {
-    margin: 10px;
-    padding-left: 10px;
+  .home form input {
+    padding-left: 0;
     border: transparent;
     border-bottom: 2px solid #FFA000; }
-  .home .welcome__form select {
-    margin: 10px; }
-  .home .welcome__form ion-icon {
+  .home form button {
+    max-height: 70px;
+    width: 100%; }
+  .home form ion-icon {
     font-size: 25px; }
-.home .enfa-content {
+.home .enfa-content h2 {
   padding: 4rem 0; }
-  .home .enfa-content .anchor-more {
-    font-size: 14px;
-    font-weight: bold; }
-    .home .enfa-content .anchor-more ion-icon {
-      color: #FFA000; }
-    .home .enfa-content .anchor-more:hover {
-      color: #FFA000; }
+.home .enfa-content .anchor-more {
+  font-size: 14px;
+  font-weight: bold; }
+  .home .enfa-content .anchor-more ion-icon {
+    color: #FFA000; }
+  .home .enfa-content .anchor-more:hover {
+    color: #FFA000; }
+.home .enfa-content .enfa-steps img {
+  width: 100%; }
+.home .enfa-content .enfa-steps h4 {
+  padding: 2rem 0; }
+.home .enfa-content .enfa-steps .enfa-step {
+  margin-bottom: 2rem;
+  background-color: #f7f7f7; }
 .home .services {
   padding: 4em; }
 .home .services__send {
@@ -188,6 +232,21 @@ footer {
 
 .dashboard__user {
   padding: 2rem 3rem; }
+  .dashboard__user ion-icon {
+    font-size: 16px; }
+  .dashboard__user .quote-cargo {
+    color: #000;
+    font-weight: 100;
+    padding: 4px 10px;
+    border: 2px solid #FFA000; }
+    .dashboard__user .quote-cargo:hover {
+      background-color: #FFA000; }
+  .dashboard__user .quoting {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .dashboard__user .quoting img {
+      max-width: 500px; }
 
 .logo-dash {
   max-width: 80px; }
@@ -209,6 +268,16 @@ footer {
     vertical-align: middle;
     margin: 0 15px 0 0;
     color: #3f4047; }
+  .dashboard form input {
+    color: #575962;
+    border-color: #ebedf2;
+    border-radius: .25rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da; }
   .dashboard table {
     background: #fff; }
   .dashboard ion-icon {
@@ -231,6 +300,8 @@ footer {
     background-color: #3c8dbc; }
   .dashboard .user-orders a {
     text-decoration: underline; }
+  .dashboard .user-orders .order.-status {
+    text-transform: uppercase; }
   .dashboard .thead-dark {
     border-bottom: 3px solid #FFA000; }
   .dashboard .box-header > .fa, .dashboard .box-header > .glyphicon, .dashboard .box-header > .ion, .dashboard .box-header .box-title {

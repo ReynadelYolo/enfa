@@ -1,8 +1,8 @@
 #scss maps
 *.map
 .sass-cache/
-node_modules/
 
 #Parcel Folders
-.cache/*
+node_modules/*
+.cache
 dist/*
