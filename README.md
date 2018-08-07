@@ -1,8 +1,12 @@
 # Enfa-delivery
 Check out the **(http://enfa.surge.sh/)** to see it in action!
 
-## Requeriments
-SCSS
+## Installation
+npm install <br>
+npm run dev 
+<br>
+Open your browser  **(http://localhost:1234/)**  
+
 
 ## Style Guides
 [BEM](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) - OCCS
