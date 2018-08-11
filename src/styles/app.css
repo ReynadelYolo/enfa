@@ -236,8 +236,10 @@ footer {
   .dashboard__user .quote-cargo {
     color: #000;
     font-weight: 100;
-    padding: 4px 10px;
-    border: 2px solid #FFA000; }
+    padding: 2px 12px;
+    /* border: 2px solid #FFA000; */
+    border-radius: 15px;
+    background: #ffb73e; }
     .dashboard__user .quote-cargo:hover {
       background-color: #FFA000; }
   .dashboard__user .quoting {
@@ -324,6 +326,35 @@ footer {
     font-size: 1rem;
     -webkit-transition: all .3s;
     transition: all .3s; }
+
+.user-order .block {
+  border: 1px solid #ccc; }
+.user-order .city ion-icon {
+  font-size: 2.5rem;
+  color: #cac8c5; }
+.user-order .address {
+  padding-left: 3.5rem; }
+.user-order .separator {
+  height: 5rem;
+  margin-left: 30px;
+  border-left: 1px dashed #ccc; }
+.user-order .status {
+  border: 1px solid #ccc; }
+  .user-order .status ion-icon {
+    font-size: 23px; }
+  .user-order .status .steps span {
+    color: #ccc;
+    padding-left: 10px; }
+  .user-order .status .steps .step {
+    padding: 0.5rem 0; }
+    .user-order .status .steps .step.-one ion-icon {
+      color: #00c0ef; }
+    .user-order .status .steps .step.-two ion-icon {
+      color: #F39C12; }
+    .user-order .status .steps .step.-three ion-icon {
+      color: #34bfa3; }
+  .user-order .status .observations {
+    padding-left: 45px; }
 
 .info-box {
   display: block;

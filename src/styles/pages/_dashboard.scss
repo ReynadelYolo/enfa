@@ -8,8 +8,10 @@
   .quote-cargo {
     color: #000;
     font-weight: 100;
-    padding: 4px 10px;
-    border: 2px solid $yellow-gold;
+    padding: 2px 12px;
+    /* border: 2px solid #FFA000; */
+    border-radius: 15px;
+    background: #ffb73e;
 
     &:hover {
       background-color: $yellow-gold;
