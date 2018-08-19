@@ -2,9 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
     <script src="src/vendors/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
     <script src="src/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/modal.js"></script>
     <link rel="stylesheet" href="src/styles/app.css">
     <title>Enfa Delivery</title>
   </head>
@@ -31,9 +34,7 @@
 
       <!-- MAIN-->
       <main>
-
         <div class="row">
-
           <section class="col-xs-12 col-md-3 dashboard__user-nav">
             <nav class="menu-desktop">
               <ul>
@@ -136,7 +137,7 @@
                                     <ion-icon name="create"></ion-icon>
                                     Editar
                                   </a>
-                                  <a class="dropdown-item -delete" href="#">
+                                  <a class="dropdown-item delete" href="javascript:void(0);">
                                       <ion-icon name="trash"></ion-icon>
                                     Eliminar
                                   </a>
@@ -155,11 +156,11 @@
                                       <ion-icon name="settings"></ion-icon>
                                   </button>
                                   <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="edit-fleet.html">
                                       <ion-icon name="create"></ion-icon>
                                       Editar
                                     </a>
-                                    <a class="dropdown-item -delete" href="#">
+                                    <a class="dropdown-item delete" href="javascript:void(0);">
                                         <ion-icon name="trash"></ion-icon>
                                       Eliminar
                                     </a>
@@ -178,11 +179,11 @@
                                       <ion-icon name="settings"></ion-icon>
                                   </button>
                                   <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="edit-fleet.html">
                                       <ion-icon name="create"></ion-icon>
                                       Editar
                                     </a>
-                                    <a class="dropdown-item -delete" href="#">
+                                    <a class="dropdown-item delete" href="javascript:void(0);">
                                         <ion-icon name="trash"></ion-icon>
                                       Eliminar
                                     </a>
@@ -195,6 +196,21 @@
               </div>
             </div>
           </section>
+        </div>
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container text-center">
+              <p>
+                ¿Deseas eliminar completamente
+                <br>
+                <strong>Mercedes-Benz Blanco</strong>
+                <br>
+                de tu lista de flotas?
+              </p>
+              <button class="btn m-btn--pill m-btn--air btn-danger">Eliminar</button>
+              <button class="btn m-btn--pill btn-secondary cancel">Cancelar</button>
+            </div>
+          </div>
         </div>
       </main>
       <!-- END MAIN -->
@@ -264,6 +280,5 @@
       </section>
     </footer>
     <!-- END FOOTER -->
-    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
   </body>
 </html>
