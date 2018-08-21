@@ -92,6 +92,10 @@ section {
   background-color: #c4c5d6;
   border-color: #c4c5d6; }
 
+.form-control:disabled, .form-control[readonly] {
+  border: transparent;
+  padding: 10px; }
+
 .logo {
   max-width: 8rem; }
   @media (max-width: 767.98px) {
@@ -177,6 +181,10 @@ footer {
         margin: 1rem; } }
   .home .welcome-bg .custom-select {
     margin-top: 20px; }
+  @media (max-width: 750px) {
+    .home .welcome-bg {
+      height: auto;
+      overflow: visible; } }
 .home .welcome-bg.-img {
   width: 100%;
   height: 100%;
@@ -188,8 +196,22 @@ footer {
   background: #a09d9d4d; }
   .home .welcome-bg .title p {
     color: #fff; }
+.home .welcome-bg .cargo-button {
+  margin-bottom: 15px;
+  border: transparent;
+  background: #F2994A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F2C94C, #F2994A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  @media (min-width: 576px) {
+    .home .welcome-bg .cargo-button {
+      margin-top: 15px;
+      padding: 15px; } }
 .home .welcome-bg .icon-cargo.-button {
-  width: 100%; }
+  width: 40px;
+  transform: scaleX(-1); }
 .home form {
   width: 100%;
   padding: 10px;
@@ -272,9 +294,8 @@ footer {
   .dashboard form input {
     color: #575962;
     border-color: #ebedf2;
-    border-radius: .25rem;
     font-size: 1rem;
-    line-height: 1.25;
+    padding: 5px;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;

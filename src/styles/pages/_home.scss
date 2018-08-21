@@ -18,6 +18,11 @@
     .custom-select {
         margin-top: 20px;
     }
+
+    @media (max-width: 750px) {
+      height: auto;
+      overflow: visible;
+    }
   }
 
   .welcome-bg {
@@ -37,10 +42,23 @@
         color: #fff;
       }
     }
+    .cargo-button {
+      margin-bottom: 15px;
+      border: transparent;
+      background: #F2994A;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      @media (min-width: 576px) {
+        margin-top: 15px;
+        padding: 15px;
+      }
+    }
 
     .icon-cargo {
       &.-button {
-        width: 100%;
+        width: 40px;
+        transform: scaleX(-1);
       }
     }
   }
