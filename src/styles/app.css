@@ -377,6 +377,30 @@ footer {
   .user-order .status .observations {
     padding-left: 45px; }
 
+.login {
+  height: 100vh; }
+  .login input {
+    padding: 10px 0;
+    margin-bottom: 1.5rem;
+    border: transparent;
+    border-bottom: 1px solid #ced4da; }
+  .login .logo {
+    width: 300px;
+    max-width: inherit; }
+  .login .-right {
+    color: #fff;
+    background: #FFA000; }
+    .login .-right .intro {
+      max-width: 500px;
+      padding-top: 8rem; }
+      .login .-right .intro :first-child {
+        font-size: 2.5rem; }
+  .login .sign.-in {
+    width: 100%;
+    padding: 30px; }
+  .login .terms a {
+    color: #DF698F; }
+
 .info-box {
   display: block;
   min-height: 90px;
