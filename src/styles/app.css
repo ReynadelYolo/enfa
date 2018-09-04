@@ -172,22 +172,18 @@ footer {
   overflow: hidden;
   position: relative; }
   .home .welcome-bg input {
-    margin: 10px 0; }
+    margin: 5px 0; }
     @media (max-width: 768px) {
       .home .welcome-bg input {
         width: 100%; } }
-    @media (min-width: 768px) {
-      .home .welcome-bg input {
-        margin: 1rem; } }
   .home .welcome-bg .custom-select {
-    margin-top: 20px; }
+    margin-top: 10px; }
   @media (max-width: 750px) {
     .home .welcome-bg {
       height: auto;
       overflow: visible; } }
 .home .welcome-bg.-img {
   width: 100%;
-  height: 100%;
   z-index: -1;
   filter: blur(1px);
   position: absolute; }
@@ -205,7 +201,7 @@ footer {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F2C94C, #F2994A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  @media (min-width: 576px) {
+  @media (min-width: 750px) {
     .home .welcome-bg .cargo-button {
       margin-top: 15px;
       padding: 15px; } }
@@ -214,7 +210,7 @@ footer {
   transform: scaleX(-1); }
 .home form {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   margin-top: 2em;
   background: #fff; }
   .home form input {
@@ -222,8 +218,12 @@ footer {
     border: transparent;
     border-bottom: 2px solid #FFA000; }
   .home form button {
-    max-height: 70px;
-    width: 100%; }
+    top: 39px;
+    position: relative; }
+    @media (max-width: 576px) {
+      .home form button {
+        padding: 11px 40px;
+        font-size: 20px; } }
   .home form ion-icon {
     font-size: 25px; }
 .home .enfa-content h2 {
@@ -387,6 +387,8 @@ footer {
   .login .logo {
     width: 300px;
     max-width: inherit; }
+  .login .form-check-inline {
+    width: 50%; }
   .login .-right {
     color: #fff;
     background: #FFA000; }
