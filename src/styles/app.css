@@ -157,6 +157,11 @@ footer {
     padding: 0.7em 0; }
   footer a {
     color: #757575; }
+  @media screen and (max-width: 760px) {
+    footer {
+      text-align: center; }
+      footer h6 {
+        margin-top: 3rem; } }
 
 .links {
   padding: 4em; }
