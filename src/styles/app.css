@@ -185,8 +185,7 @@ footer {
     margin-top: 10px; }
   @media (max-width: 750px) {
     .home .welcome-bg {
-      height: auto;
-      overflow: visible; } }
+      height: auto; } }
 .home .welcome-bg.-img {
   width: 100%;
   z-index: -1;
@@ -195,6 +194,9 @@ footer {
 .home .welcome-bg .title {
   padding: 3rem;
   background: #a09d9d4d; }
+  @media screen and (max-width: 750px) {
+    .home .welcome-bg .title {
+      padding: 1rem 3rem; } }
   .home .welcome-bg .title p {
     color: #fff; }
 .home .welcome-bg .cargo-button {

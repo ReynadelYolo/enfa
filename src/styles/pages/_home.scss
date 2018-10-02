@@ -18,7 +18,6 @@
 
     @media (max-width: 750px) {
       height: auto;
-      overflow: visible;
     }
   }
 
@@ -33,6 +32,10 @@
     .title {
       padding: 3rem;
       background: #a09d9d4d;
+
+      @media screen and (max-width: 750px){
+        padding: 1rem 3rem;
+      }
 
       p {
         color: #fff;
