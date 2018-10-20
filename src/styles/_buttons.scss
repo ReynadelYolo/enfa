@@ -15,7 +15,9 @@
     }
   }
 
-  .btn-cargo {
+  &.btn-primary {
+    color: #fff;
+    background: #ffad00;
   }
 }
 

@@ -44,6 +44,9 @@ section {
   .btn.btn-danger.m-btn--air {
     -webkit-box-shadow: 0 5px 10px 2px rgba(244, 81, 108, 0.19) !important;
     box-shadow: 0 5px 10px 2px rgba(244, 81, 108, 0.19) !important; }
+  .btn.btn-primary {
+    color: #fff;
+    background: #ffad00; }
 
 .btn-outline-primary {
   color: #212529;
@@ -112,6 +115,13 @@ header .user-sign a {
   font-weight: bold; }
 header .user-sign.-up {
   color: #FFA000; }
+header .user-nav li {
+  padding: 20px; }
+header .user-nav a {
+  color: black;
+  padding-bottom: 2px; }
+  header .user-nav a:hover {
+    border-bottom: 2px solid black; }
 
 .header__support {
   font-size: 13px; }
@@ -172,6 +182,67 @@ footer {
   background: #131313;
   margin: -15px; }
 
+.home .hero {
+  display: flex;
+  min-height: 700px;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/src/images/15.jpg"); }
+  .home .hero .hero-content {
+    width: 1170px;
+    margin: 0 auto; }
+  .home .hero .hero-copy {
+    max-width: 550px;
+    padding: 3rem 0;
+    margin-bottom: 2rem; }
+  .home .hero .search-form {
+    height: 150px;
+    padding: 0;
+    margin: 0px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px; }
+    .home .hero .search-form input {
+      width: 100%;
+      font-size: 16px;
+      height: 40px;
+      line-height: 36px;
+      color: #444444;
+      font-weight: 300;
+      text-indent: 11px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      background: transparent;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #c8c8c8;
+      border-image: initial;
+      border-radius: 5px; }
+    .home .hero .search-form button {
+      appearance: none;
+      position: relative;
+      display: inline-block;
+      font-family: inherit;
+      padding: 0 15px;
+      height: 40px;
+      line-height: 36px;
+      min-height: 36px;
+      min-width: 145px;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 27px; }
 .home .welcome-bg {
   height: 85vh;
   overflow: hidden;
@@ -182,7 +253,7 @@ footer {
       .home .welcome-bg input {
         width: 100%; } }
   .home .welcome-bg .custom-select {
-    margin-top: 10px; }
+    margin-top: 5px; }
   @media (max-width: 750px) {
     .home .welcome-bg {
       height: auto; } }
@@ -216,17 +287,37 @@ footer {
   width: 40px;
   transform: scaleX(-1); }
 .home form {
-  width: 100%;
-  padding: 5px;
-  margin-top: 2em;
-  background: #fff; }
+  width: 1170px;
+  padding: 30px;
+  margin: 0 auto !important;
+  background: #fff;
+  border-radius: 5px;
+  bottom: -80px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px; }
+  .home form label {
+    margin: 0; }
   .home form input {
-    padding-left: 0;
-    border: transparent;
-    border-bottom: 2px solid #FFA000; }
+    width: 100%;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    color: #444444;
+    font-weight: 300;
+    text-indent: 11px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c8c8c8;
+    border-image: initial;
+    border-radius: 5px; }
   .home form button {
-    top: 39px;
-    position: relative; }
+    top: 29px;
+    background: #ffad00;
+    position: relative;
+    border-radius: 5px; }
     @media (max-width: 576px) {
       .home form button {
         padding: 11px 40px;
@@ -242,21 +333,32 @@ footer {
     color: #FFA000; }
   .home .enfa-content .anchor-more:hover {
     color: #FFA000; }
+.home .enfa-content .enfa-steps .copy-step {
+  padding: 1rem;
+  font-weight: bold; }
 .home .enfa-content .enfa-steps img {
   width: 100%; }
 .home .enfa-content .enfa-steps h4 {
   padding: 2rem 0; }
 .home .enfa-content .enfa-steps .enfa-step {
-  margin-bottom: 2rem;
-  background-color: #f7f7f7; }
+  margin-bottom: 2rem; }
 .home .services {
   padding: 4em; }
+.home .ship-wrap,
+.home .send-wrap {
+  background: #23202085;
+  text-align: center;
+  padding: 1rem; }
 .home .services__send {
   background: linear-gradient(to right, #f2994a, #f2c94c); }
+.home .services__send {
+  color: #fff;
+  background-size: cover;
+  background-image: url("../images/quiero_enviar.jpg"); }
 .home .services__ship {
   color: #fff;
   background-size: cover;
-  background-image: url("../images/bg-1.jpg"); }
+  background-image: url("../images/quiero_transportar.jpg"); }
 
 .dashboard__user {
   padding: 2rem 3rem; }
@@ -475,6 +577,9 @@ footer {
 
 .bg-purple, .label-finishing {
   background-color: #9400a6; }
+
+.bg-black, .label-finished {
+  background-color: #000; }
 
 .modal-mask {
   position: fixed;

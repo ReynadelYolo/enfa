@@ -11,103 +11,77 @@
     <title>Enfa Delivery</title>
   </head>
   <body>
-    <header class="container">
-      <div class="row">
-        <div class="col col-md-2">
-          <a href="/">
-            <img class="logo" src="src/images/logo.svg" alt="Enfa">
-          </a>
-        </div>
-        <div class="col d-none d-md-flex">
-          <!--<ul class="d-flex align-items-center">
-            <li>
-              <ion-icon name="call"></ion-icon>
-              01 800 920 30 45
-            </li>
-            <li>
-              <ion-icon name="pin"></ion-icon>
-              Av. Horacio 340,CDMX
-            </li>
-            <li>
-              <ion-icon name="time"></ion-icon>
-              Lunes a Viernes, 8:00 - 19:00
-            </li>
-          </ul>-->
-        </div>
-        <div class="col col-md-3 d-flex align-items-center user-sign">
-          <a class="user-sign -in"href="login.html">Entrar</a>
-          |
-          <a class="user-sign -up" href="registrarse.html">Registrarme</a>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-2 order-1 order-sm-1">
+            <a href="/">
+              <img class="logo" src="src/images/logo.svg" alt="Enfa">
+            </a>
+          </div>
+            <ul class="col d-flex align-items-center order-3 order-sm-2 justify-content-center user-nav">
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Quiero Enviar </a></li>
+            </ul>
+          <div class="col col-md-3 d-flex align-items-center user-sign order-2 order-sm-3">
+            <a class="user-sign -in"href="login.html">Entrar</a>
+            |
+            <a class="user-sign -up" href="registrarse.html">Registrarme</a>
+          </div>
         </div>
       </div>
     </header>
     <!-- NAV -->
-    <nav class="menu-desktop">
-      <ul class="container d-flex justify-content-end">
-        <li><a href="#">Quiero Transportar</a></li>
-        <li><a href="#">Quiero Enviar </a></li>
-
-      </ul>
-    </nav>
+   
     <!-- END NAV -->
     <main class="home">
-      <section class="welcome-bg">
-        <img class="welcome-bg -img img-fluid"src="src/images/15.jpg" alt="">
-        <div class="row align-items-center">
-          <div class="col title">
-            <p>Envía o transporta tu carga</p>
-              <h1>Encuentra o envia tu <span style="color:#FFA000">carga</span> con nosotros.</h1>
-              <p>
+      <section class="hero">
+        <div class="hero-content">
+            <div class="hero-copy">
+                Envía o transporta tu carga
+                <h1>Encuentra o envia tu carga con nosotros.</h1>
                 Somos el primer Marketplace Mexicano
-            </p>
-
-            <p>
-              especializado en transporte de carga para empresas.
-            </p>
-          </div>
+                especializado en transporte de carga para empresas.
+              </div>
+              <div class="search-form">
+                <fieldset>
+                    <label for="origin">Origen</label>
+                    <input type="text" id="origin" value="CDMX">
+                </fieldset>
+                <fieldset>
+                    <label for="destin">Destino</label>
+                    <input type="text" id="destin" value="Texas">
+                </fieldset>
+                <fieldset>
+                  <label for="date">Fecha</label>
+                  <input type="date">
+                </fieldset>
+                <fieldset>
+                    <label for="">Tipo</label>
+                    <select class="custom-select">
+                      <option selected="">Caja seca</option>
+                      <option value="1">Caja refigerada</option>
+                      <option value="2">Otro</option>
+                    </select>
+                </fieldset>
+                <button class="btn btn-primary">BUSCAR</button>
+              </div>
         </div>
-        <form class="row m-0">
-            <div class="col-xs-12  col-md-3">
-              <label for="">Origen</label>
-              <input type="text" class="form-control" value="CDMX">
-            </div>
-            <div class="col-xs-12  col-md-3">
-              <label for="">Destino</label>
-              <input type="text" class="form-control" value="Tijuana">
-            </div>
-            <div class="col-xs-12  col-md-3">
-              <label for="">Fecha</label>
-              <input type="date" class="form-control">
-            </div>
-            <div class="col-xs-12  col-md-2">
-              <label for="">Tipo</label>
-              <select class="custom-select">
-                <option selected>Caja seca</option>
-                <option value="1">Caja refigerada</option>
-                <option value="2">Otro</option>
-              </select>
-            </div>
-            <div class="col-xs-12 col-md-1 text-center">
-              <button class="btn m-btn--pill m-btn--air btn-warning" type="button" name="button">
-                BUSCAR
-              </button>
-            </div>
-          </form>
       </section>
       <section class="container enfa-content">
         <h2 class="text-center">Envía tu carga en 3 pasos 😉</h2>
         <div class="row enfa-content enfa-steps text-center text-uppercase">
           <div class="col-xs-12 col-md-4 enfa-step -one">
-            <img src="http://via.placeholder.com/300x350" alt="">
-            <p>1.Busca y encuentra</p>
+            <img src="/src/images/find.svg" alt="">
+            <p class="copy-step">1.Busca y encuentra</p>
           </div>
           <div class="col-xs-12 col-md-4 enfa-step -two">
-            <img src="http://via.placeholder.com/300x350" alt="">
-            <p>2. Espera tu cotización inteligente</p>
+            <img src="/src/images/cotiza.svg" alt="">
+            <p class="copy-step">2. Espera tu cotización inteligente</p>
           </div>
           <div class="col-xs-12 col-md-4 enfa-step -three">
-            <img src="http://via.placeholder.com/300x350" alt="">
-            <p>3. Paga y envía</p>
+            <img src="/src/images/paga.svg" alt="">
+            <p class="copy-step">3. Paga y envía</p>
           </div>
         </div>
       </section>
@@ -115,27 +89,31 @@
         <div class="row">
           <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center
           justify-content-center services services__send">
-            <h3>Quiero enviar</h3>
-            <p>
-              Si quieres envíar tu carga, tenemos la flota perfecta para transportarla
-            </p>
-            <button type="button" class="btn btn-outline-primary">
-              Click Aquí
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
+            <div class="send-wrap">
+                <h3>Quiero enviar</h3>
+                <p>
+                  Si quieres envíar tu carga, tenemos la flota perfecta para transportarla
+                </p>
+                <button type="button" class="btn btn-outline-primary">
+                  Click Aquí
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
           </div>
           <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center
           justify-content-center services services__ship">
-            <h3>Quiero transportar</h3>
-            <p>
-              Más ingresos extras, utiliza tu flota al máximo, seguridad en el pago.
-              <br>
-              UNETE a nuestro equipo de transportistas AHORA.
-            </p>
-            <button type="button" class="btn btn-outline-secondary">
-              Click Aquí
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
+            <div class="ship-wrap">
+                <h3>Quiero transportar</h3>
+                <p>
+                  Más ingresos extras, utiliza tu flota al máximo, seguridad en el pago.
+                  <br>
+                  UNETE a nuestro equipo de transportistas AHORA.
+                </p>
+                <button type="button" class="btn btn-outline-secondary">
+                  Click Aquí
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
           </div>
         </div>
       </section>

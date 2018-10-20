@@ -23,6 +23,19 @@ header {
       color: $yellow-gold;
     }
   }
+
+  .user-nav {
+    li {
+      padding: 20px;
+    }
+    a {
+      color: black;
+      padding-bottom: 2px;
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
 }
 .header__support {
   font-size: 13px;
