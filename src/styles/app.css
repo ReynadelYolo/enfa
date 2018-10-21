@@ -192,6 +192,10 @@ footer {
   .home .hero .hero-content {
     width: 1170px;
     margin: 0 auto; }
+    @media screen and (max-width: 1024px) {
+      .home .hero .hero-content {
+        padding: 2rem;
+        width: 100%; } }
   .home .hero .hero-copy {
     max-width: 550px;
     padding: 3rem 0;
@@ -209,6 +213,8 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px; }
+    .home .hero .search-form fieldset {
+      min-width: 213px; }
     .home .hero .search-form input {
       width: 100%;
       font-size: 16px;
@@ -225,6 +231,9 @@ footer {
       border-color: #c8c8c8;
       border-image: initial;
       border-radius: 5px; }
+      @media screen and (max-width: 600px) {
+        .home .hero .search-form input {
+          width: 100%; } }
     .home .hero .search-form button {
       appearance: none;
       position: relative;
@@ -243,6 +252,10 @@ footer {
       cursor: pointer;
       text-align: center;
       margin-top: 27px; }
+    @media screen and (max-width: 1024px) {
+      .home .hero .search-form {
+        padding: 1rem;
+        height: auto; } }
 .home .welcome-bg {
   height: 85vh;
   overflow: hidden;

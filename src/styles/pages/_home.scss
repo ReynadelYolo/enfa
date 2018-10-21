@@ -9,6 +9,10 @@
     .hero-content {
       width: 1170px;
       margin: 0 auto;
+      @media screen and (max-width:1024px) {
+        padding: 2rem;
+        width: 100%;
+      }
     }
 
     .hero-copy {
@@ -30,6 +34,10 @@
       padding-right: 30px;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
 
+      fieldset {
+        min-width: 213px;
+      }
+
       input {
         width: 100%;
         font-size: 16px;
@@ -46,6 +54,10 @@
         border-color: rgb(200, 200, 200);
         border-image: initial;
         border-radius: 5px;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
       }
 
       button  {
@@ -66,6 +78,10 @@
         cursor: pointer;
         text-align: center;
         margin-top: 27px;
+      }
+      @media screen and (max-width:1024px) {
+        padding: 1rem;
+        height: auto;
       }
     }
   }
