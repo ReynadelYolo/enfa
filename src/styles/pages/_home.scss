@@ -194,41 +194,6 @@
     }
   }
 
-  .enfa-content {
-    h2 {
-      padding: 4rem 0;
-    }
-    .anchor-more {
-      font-size: 14px;
-      font-weight: bold;
-
-      ion-icon {
-        color: $yellow-gold;
-      }
-      &:hover {
-        color: $yellow-gold;
-      }
-    }
-
-    .enfa-steps {
-      .copy-step {
-        padding: 1rem;
-        font-weight: bold;
-      }
-    
-      img {
-        width: 100%;
-      }
-
-      h4 {
-        padding: 2rem 0;
-      }
-      .enfa-step {
-        margin-bottom: 2rem;
-      }
-    }
-  }
-
   .services {
     padding: 4em;
   }
@@ -251,5 +216,39 @@
     color: #fff;
     background-size: cover;
     background-image: url('../images/quiero_transportar.jpg');
+  }
+}
+.enfa-content {
+  h2 {
+    padding: 4rem 0;
+  }
+  .anchor-more {
+    font-size: 14px;
+    font-weight: bold;
+
+    ion-icon {
+      color: $yellow-gold;
+    }
+    &:hover {
+      color: $yellow-gold;
+    }
+  }
+
+  .enfa-steps {
+    .copy-step {
+      padding: 1rem;
+      font-weight: bold;
+    }
+  
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      padding: 2rem 0;
+    }
+    .enfa-step {
+      margin-bottom: 2rem;
+    }
   }
 }

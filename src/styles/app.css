@@ -35,7 +35,8 @@ section {
   padding-bottom: 4rem; }
 
 .btn {
-  border-radius: 0.05rem;
+  border: 0;
+  border-radius: 5px;
   color: #fff; }
   .btn.btn-metal {
     color: #fff; }
@@ -46,6 +47,7 @@ section {
     box-shadow: 0 5px 10px 2px rgba(244, 81, 108, 0.19) !important; }
   .btn.btn-primary {
     color: #fff;
+    font-weight: bold;
     background: #ffad00; }
 
 .btn-outline-primary {
@@ -99,8 +101,16 @@ section {
   border: transparent;
   padding: 10px; }
 
+.m-t-1 {
+  margin-top: 1rem; }
+
+.m-t-2 {
+  margin-top: 2rem; }
+
 .logo {
   max-width: 8rem; }
+  .logo.-shippers {
+    max-width: 6rem; }
   @media (max-width: 767.98px) {
     .logo {
       max-width: 7rem; } }
@@ -337,24 +347,6 @@ footer {
         font-size: 20px; } }
   .home form ion-icon {
     font-size: 25px; }
-.home .enfa-content h2 {
-  padding: 4rem 0; }
-.home .enfa-content .anchor-more {
-  font-size: 14px;
-  font-weight: bold; }
-  .home .enfa-content .anchor-more ion-icon {
-    color: #FFA000; }
-  .home .enfa-content .anchor-more:hover {
-    color: #FFA000; }
-.home .enfa-content .enfa-steps .copy-step {
-  padding: 1rem;
-  font-weight: bold; }
-.home .enfa-content .enfa-steps img {
-  width: 100%; }
-.home .enfa-content .enfa-steps h4 {
-  padding: 2rem 0; }
-.home .enfa-content .enfa-steps .enfa-step {
-  margin-bottom: 2rem; }
 .home .services {
   padding: 4em; }
 .home .ship-wrap,
@@ -372,6 +364,25 @@ footer {
   color: #fff;
   background-size: cover;
   background-image: url("../images/quiero_transportar.jpg"); }
+
+.enfa-content h2 {
+  padding: 4rem 0; }
+.enfa-content .anchor-more {
+  font-size: 14px;
+  font-weight: bold; }
+  .enfa-content .anchor-more ion-icon {
+    color: #FFA000; }
+  .enfa-content .anchor-more:hover {
+    color: #FFA000; }
+.enfa-content .enfa-steps .copy-step {
+  padding: 1rem;
+  font-weight: bold; }
+.enfa-content .enfa-steps img {
+  width: 100%; }
+.enfa-content .enfa-steps h4 {
+  padding: 2rem 0; }
+.enfa-content .enfa-steps .enfa-step {
+  margin-bottom: 2rem; }
 
 .dashboard__user {
   padding: 2rem 3rem; }
@@ -524,6 +535,68 @@ footer {
     padding: 30px; }
   .login .terms a {
     color: #DF698F; }
+
+.landing .title-secondary {
+  font-weight: 900;
+  color: #616f85;
+  font-size: 17.5px;
+  text-align: center;
+  text-transform: uppercase; }
+.landing .heading {
+  color: #0F5481;
+  font-weight: bold; }
+.landing .hero {
+  min-height: 500px;
+  background-size: cover;
+  background-image: url("/src/images/bg-cargo.jpg"); }
+.landing .hero-copy {
+  padding: 5rem; }
+  .landing .hero-copy h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 .5em 0;
+    text-shadow: 2px 2px 5px #000000; }
+.landing .form-landing {
+  padding: 2rem;
+  max-width: 550px;
+  margin: 3rem 5rem;
+  background-color: rgba(255, 255, 255, 0.9); }
+  .landing .form-landing label,
+  .landing .form-landing input {
+    width: 100%; }
+  .landing .form-landing .form-input {
+    padding: 10px;
+    margin-top: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: none;
+    resize: none; }
+    .landing .form-landing .form-input::before {
+      content: "";
+      display: inline-block;
+      cursor: pointer;
+      width: 10px;
+      height: 10px; }
+  .landing .form-landing .terms {
+    padding: 1rem; }
+    .landing .form-landing .terms a {
+      color: darkblue; }
+
+.nav {
+  display: inline; }
+  .nav a {
+    color: initial;
+    margin: 0 1.5rem;
+    font-weight: bold; }
+    .nav a:hover {
+      border-bottom: 3px solid #000; }
+  .nav .active {
+    border-bottom: 3px solid #000; }
 
 .info-box {
   display: block;
