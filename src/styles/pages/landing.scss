@@ -23,7 +23,6 @@
             font-weight: 900;
             font-size: 36px;
             text-transform: uppercase;
-            margin: 0 0 .5em 0;
             text-shadow: 2px 2px 5px #000000;
         }
     }
@@ -37,17 +36,17 @@
         input {
             width: 100%;
         }
+
         i {
             color: #a94442;
         }
         .required-field {
-            /* border: 1px solid; */
-            /* position: absolute; */
             float: right;
             position: relative;
             top: -41px;
             right: -10px;
         }
+
         .form-input {
             padding: 10px;
             margin-top: 12px;

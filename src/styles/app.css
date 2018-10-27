@@ -109,6 +109,9 @@ section {
 .m-t-2 {
   margin-top: 2rem; }
 
+.m-b-2 {
+  margin-bottom: 2rem; }
+
 .p-t-4 {
   padding-top: 4rem; }
 
@@ -568,7 +571,6 @@ footer {
     font-weight: 900;
     font-size: 36px;
     text-transform: uppercase;
-    margin: 0 0 .5em 0;
     text-shadow: 2px 2px 5px #000000; }
 .landing .form-landing {
   padding: 2rem;
@@ -581,8 +583,6 @@ footer {
   .landing .form-landing i {
     color: #a94442; }
   .landing .form-landing .required-field {
-    /* border: 1px solid; */
-    /* position: absolute; */
     float: right;
     position: relative;
     top: -41px;
