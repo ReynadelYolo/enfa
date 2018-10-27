@@ -7,6 +7,7 @@
         text-transform: uppercase;
     }
     .heading {
+        font-size: 17px;
         color: #0F5481;
         font-weight: bold;
     }
@@ -36,6 +37,17 @@
         input {
             width: 100%;
         }
+        i {
+            color: #a94442;
+        }
+        .required-field {
+            /* border: 1px solid; */
+            /* position: absolute; */
+            float: right;
+            position: relative;
+            top: -41px;
+            right: -10px;
+        }
         .form-input {
             padding: 10px;
             margin-top: 12px;
@@ -61,14 +73,40 @@
                 color: darkblue;
             }
         }
+
+        @media screen and (max-width:980px) {
+            margin: 0 auto;
+        }
+    }
+
+    .copy-q {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 1.4em;
+        text-transform: uppercase;
+    }
+
+    .faq {
+        background-color: #ecf2f5;
+
+        .faq-title {
+            font-size: 26px;
+            color: #384A50;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: left;
+        }
     }
 }
+
+
 .nav {
     padding: 10px;
     a {
         color: initial;
         margin: 0 1.5rem;
         font-weight: bold;
+    
       &:hover {
           border-bottom: 3px solid #000;
       }

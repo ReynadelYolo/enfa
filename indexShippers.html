@@ -39,23 +39,27 @@
                         <a href="#" class="btn btn-primary text-uppercase">Registrate gratis</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-6">
                     <form action="#" class="row form-landing">
-                        <div class="col-12">
+                        <div class="col-12 d-flex justify-content-between">
                             <h3 class="heading text-uppercase">Enviar mi carga ahora</h3>
-                            <small>Todos los campos son requeridos</small>
+                            <small class="text-right"><i>*</i> Campos obligatorios</small>
                         </div>
                         <div class="col-12">
-                            <label for="name"></label>
+                            <label for="name" hidden></label>
                             <input type="text" class="form-input" id="name" placeholder="Nombre completo">
+                            <i class="required-field">*</i>
+                            
                             
     
-                            <label for="phone"></label>
+                            <label for="phone" hidden></label>
                             <input type="text" class="form-input" id="phone" placeholder="Teléfono (555 555 5555)">
+                            <i class="required-field">*</i>
                             
     
-                            <label for="mail"></label>
+                            <label for="mail" hidden></label>
                             <input type="text" class="form-input" id="mail" placeholder="Correo electrónico">
+                            <i class="required-field">*</i>
                         </div>
                         <small class="col-12 terms">Al hacer clic está aceptando los <a href="#">Términos de servicio y Términos de privacidad de ENFA.</a></small>
                         <button class="col-12 btn btn-primary btn-sign text-uppercase">Regístrese ahora</button>
@@ -115,7 +119,102 @@
                     </div>
             </div>
         </section>
+        <section class="faq container-fluid p-t-4" aria-label="Faq section">
+            <div class="container">
+                    <div class="row">
+                            <div class="col-12">
+                                <h1 class="border-b-gray text-uppercase faq-title">PREGUNTAS FRECUENTES - Conductores</h1>
+                            </div>
+                            <div class="col-12">
+                                <p class="copy-q">¿Lorem ipsum dolor sit amet?</p>
+                                <p class="copy-a border-b-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quam lectus, cursus congue lorem bibendum ut.
+                                    Cras arcu leo, rutrum at tincidunt sed, fermentum ac risus. Fusce porttitor sem eu dui auctor, eu congue diam congue.
+                                    In accumsan nulla ut diam tincidunt blandit. Nunc non laoreet justo. Mauris vel mauris id ante interdum pharetra.
+                                    Nunc convallis posuere metus, a placerat tortor placerat ac.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <p class="copy-q">¿Lorem ipsum dolor sit amet?</p>
+                                <p class="copy-a border-b-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quam lectus, cursus congue lorem bibendum ut.
+                                    Cras arcu leo, rutrum at tincidunt sed, fermentum ac risus. Fusce porttitor sem eu dui auctor, eu congue diam congue.
+                                    In accumsan nulla ut diam tincidunt blandit. Nunc non laoreet justo. Mauris vel mauris id ante interdum pharetra.
+                                    Nunc convallis posuere metus, a placerat tortor placerat ac.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <p class="copy-q">¿Lorem ipsum dolor sit amet?</p>
+                                <p class="copy-a border-b-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quam lectus, cursus congue lorem bibendum ut.
+                                    Cras arcu leo, rutrum at tincidunt sed, fermentum ac risus. Fusce porttitor sem eu dui auctor, eu congue diam congue.
+                                    In accumsan nulla ut diam tincidunt blandit. Nunc non laoreet justo. Mauris vel mauris id ante interdum pharetra.
+                                    Nunc convallis posuere metus, a placerat tortor placerat ac.
+                                </p>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="text-uppercase btn btn-primary"> IR A "PREGUNTAS FRECUENTES"</button>
+                            </div>
+                            
+                        </div>
+            </div>
+        </section>
     </main>
-    
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="container links">
+            <section class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="marketplace.html">
+                    <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+                    </a>
+                    <p>
+                    Enfadelivery se encarga de proveer servicios de transporte mediante
+                    la ocupación de las capacidades disponibles en la fecha y hora que
+                    tu la necesitas.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Contáctanos</h6>
+                    <ul>
+                        <li>
+                        <a href="#">
+                            <ion-icon name="pin"></ion-icon>
+                            Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <ion-icon name="call"></ion-icon>
+                            44 247 15 218
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <ion-icon name="mail"></ion-icon>
+                            hola@enfadelivery.com
+                        </a>
+                        </li>
+                        <!--<li>
+                        <a href="#">
+                            <ion-icon name="time"></ion-icon>
+                            Lunes - Sábado, 9:00 - 19:00 hrs
+                        </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Enlaces</h6>
+                    <ul>
+                    <li><a href="#">Quiero Enviar</a></li>
+                    <li><a href="#">Quiero Transportar</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
 </body>
 </html>

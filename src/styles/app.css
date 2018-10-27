@@ -49,6 +49,8 @@ section {
     color: #fff;
     font-weight: bold;
     background: #ffad00; }
+    .btn.btn-primary:hover {
+      background: #d09519; }
 
 .btn-outline-primary {
   color: #212529;
@@ -106,6 +108,14 @@ section {
 
 .m-t-2 {
   margin-top: 2rem; }
+
+.p-t-4 {
+  padding-top: 4rem; }
+
+.border-b-gray {
+  margin-bottom: 1.4em;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dbe7ec; }
 
 .logo {
   max-width: 8rem; }
@@ -544,6 +554,7 @@ footer {
   text-align: center;
   text-transform: uppercase; }
 .landing .heading {
+  font-size: 17px;
   color: #0F5481;
   font-weight: bold; }
 .landing .hero {
@@ -567,6 +578,15 @@ footer {
   .landing .form-landing label,
   .landing .form-landing input {
     width: 100%; }
+  .landing .form-landing i {
+    color: #a94442; }
+  .landing .form-landing .required-field {
+    /* border: 1px solid; */
+    /* position: absolute; */
+    float: right;
+    position: relative;
+    top: -41px;
+    right: -10px; }
   .landing .form-landing .form-input {
     padding: 10px;
     margin-top: 12px;
@@ -587,6 +607,22 @@ footer {
     padding: 1rem; }
     .landing .form-landing .terms a {
       color: darkblue; }
+  @media screen and (max-width: 980px) {
+    .landing .form-landing {
+      margin: 0 auto; } }
+.landing .copy-q {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1.4em;
+  text-transform: uppercase; }
+.landing .faq {
+  background-color: #ecf2f5; }
+  .landing .faq .faq-title {
+    font-size: 26px;
+    color: #384A50;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left; }
 
 .nav {
   padding: 10px; }
