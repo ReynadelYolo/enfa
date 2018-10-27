@@ -1,11 +1,12 @@
 .home {
   .hero {
     display: flex;
+    color: white;
     min-height: 700px;
     flex-direction: column;
     background-size: cover;
     justify-content: center;
-    background-image: url("/src/images/15.jpg");
+    background-image: url("/src/images/hero.jpg");
     .hero-content {
       width: 1170px;
       margin: 0 auto;

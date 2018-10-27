@@ -194,11 +194,12 @@ footer {
 
 .home .hero {
   display: flex;
+  color: white;
   min-height: 700px;
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("/src/images/15.jpg"); }
+  background-image: url("/src/images/hero.jpg"); }
   .home .hero .hero-content {
     width: 1170px;
     margin: 0 auto; }
@@ -588,7 +589,7 @@ footer {
       color: darkblue; }
 
 .nav {
-  display: inline; }
+  padding: 10px; }
   .nav a {
     color: initial;
     margin: 0 1.5rem;
