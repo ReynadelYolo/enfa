@@ -115,6 +115,9 @@ section {
 .p-t-4 {
   padding-top: 4rem; }
 
+.h-100 {
+  min-height: 750px; }
+
 .border-b-gray {
   margin-bottom: 1.4em;
   padding-bottom: 1.5rem;
@@ -615,6 +618,8 @@ footer {
   font-weight: 600;
   margin-bottom: 1.4em;
   text-transform: uppercase; }
+.landing .shipper-content h2 {
+  padding-bottom: 1rem; }
 .landing .faq {
   background-color: #ecf2f5; }
   .landing .faq .faq-title {
