@@ -8,17 +8,22 @@
     justify-content: center;
     background-image: url("/src/images/hero.jpg");
     .hero-content {
+      top: -60px;
       width: 1170px;
       margin: 0 auto;
+      position: relative;
       @media screen and (max-width:1024px) {
         padding: 2rem;
         width: 100%;
       }
     }
 
+    .hero-content-copy {
+      font-size: 20px;
+    }
+
     .hero-copy {
       max-width: 550px;
-      padding: 3rem 0;
       margin-bottom: 2rem;
     }
     .search-form {
@@ -200,9 +205,10 @@
   }
   .ship-wrap,
   .send-wrap {
-    background: #23202085;
-    text-align: center;
     padding: 1rem;
+    color: #000;
+    background: #fff;
+    text-align: center;
 }
   .services__send {
     background: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));

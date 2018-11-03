@@ -1,6 +1,10 @@
 .dashboard__user {
   padding: 2rem 3rem;
 
+  @media (max-width: 991.98px) { 
+    padding: 0;
+  }
+
   ion-icon {
     font-size: 16px;
   }

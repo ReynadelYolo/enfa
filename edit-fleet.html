@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
     <script src="src/vendors/jquery/jquery.js"></script>
     <script src="src/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -44,12 +45,11 @@
             <nav class="menu-desktop">
               <ul>
                 <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
-                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
-                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mi información</a></li>
                 <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
                 <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
                 <li class="active"><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
-                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Mis rutas</a></li>
                 <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
               </ul>
             </nav>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                   <div class="form-group">
-                    <label for="">Matricula</label>
+                    <label for="">Placa</label>
                     <input class="form-control" type="text" placeholder="XXXX-XXXX">
                   </div>
                 </div>
@@ -116,16 +116,25 @@
                     <option>Otro</option>
                   </select>
                  </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
-                  <label class="m-checkbox form-control">
-                    <input type="checkbox"> GPS
-                  </label>
-                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
-                  <label class="m-checkbox form-control">
-                    <input type="checkbox"> Seguro
-                  </label>
-                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 form-group form-control">
+                  <small>Selecciona si cuentas con lo siguiente:</small>
+                  <div class="form-check form-check-inline">
+                      <label class="m-checkbox">
+                        <input type="checkbox"> GPS
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="m-checkbox">
+                        <input type="checkbox"> Seguro
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="m-checkbox">
+                        <input type="checkbox"> Certificado de fumigación
+                      </label>
+                  </div>
+                
+                </div>
                 <h3 class="col-sm-12">Información Adicional</h3>
                 <div class="col-sm-12 col-md-4">
                      <div class="form-group">
@@ -147,15 +156,22 @@
                       </div>
                      </div>
                    </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label class="custom-file-label" for="inputGroupFile01">Carta Porte</label>
-                     <div class="custom-file">
-                       <input type="file" class="custom-file-input" id="inputGroupFile01">
-                     </div>
-
-                  </div>
-                </div>
+                   <div class="col-sm-12  col-md-6">
+                      <div class="form-group">
+                        <label class="custom-file-label" for="inputGroupFile01">Sube la foto de tu caja</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12  col-md-6">
+                      <div class="form-group">
+                        <label class="custom-file-label" for="inputGroupFile01">Sube la foto de tu tracto</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        </div>
+                      </div>
+                    </div>
                 <div class="col-md-12 text-right">
       						<button type="reset" class="btn m-btn--pill m-btn--air btn-warning">Guardar</button>
       						<button type="reset" href="fleet.html" class="btn m-btn--pill btn-secondary">Cancelar</button>

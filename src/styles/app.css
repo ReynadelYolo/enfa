@@ -51,6 +51,11 @@ section {
     background: #ffad00; }
     .btn.btn-primary:hover {
       background: #d09519; }
+  .btn.btn-gradient-primary {
+    color: #fff;
+    font-weight: bold;
+    border-color: #FFA000;
+    background: linear-gradient(to right, #f2994a, #f2c94c); }
 
 .btn-outline-primary {
   color: #212529;
@@ -217,15 +222,18 @@ footer {
   justify-content: center;
   background-image: url("/src/images/hero.jpg"); }
   .home .hero .hero-content {
+    top: -60px;
     width: 1170px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .home .hero .hero-content {
         padding: 2rem;
         width: 100%; } }
+  .home .hero .hero-content-copy {
+    font-size: 20px; }
   .home .hero .hero-copy {
     max-width: 550px;
-    padding: 3rem 0;
     margin-bottom: 2rem; }
   .home .hero .search-form {
     height: 150px;
@@ -368,9 +376,10 @@ footer {
   padding: 4em; }
 .home .ship-wrap,
 .home .send-wrap {
-  background: #23202085;
-  text-align: center;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #000;
+  background: #fff;
+  text-align: center; }
 .home .services__send {
   background: linear-gradient(to right, #f2994a, #f2c94c); }
 .home .services__send {
@@ -403,6 +412,9 @@ footer {
 
 .dashboard__user {
   padding: 2rem 3rem; }
+  @media (max-width: 991.98px) {
+    .dashboard__user {
+      padding: 0; } }
   .dashboard__user ion-icon {
     font-size: 16px; }
   .dashboard__user .quote-cargo {
@@ -639,6 +651,9 @@ footer {
       border-bottom: 3px solid #000; }
   .nav .active {
     border-bottom: 3px solid #000; }
+
+.custom-file-label::after {
+  content: "Subir" !important; }
 
 .info-box {
   display: block;
