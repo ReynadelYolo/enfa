@@ -652,8 +652,12 @@ footer {
   .nav .active {
     border-bottom: 3px solid #000; }
 
-.custom-file-label::after {
-  content: "Subir" !important; }
+.custom-file-label {
+  right: inherit;
+  left: inherit;
+  width: 90%; }
+  .custom-file-label::after {
+    content: "Subir" !important; }
 
 .info-box {
   display: block;

@@ -1,3 +1,8 @@
-.custom-file-label::after {
-    content: "Subir" !important;
+.custom-file-label {
+    right: inherit;
+    left: inherit;
+    width: 90%;
+    &::after {
+        content: "Subir" !important;
+    }
 }
