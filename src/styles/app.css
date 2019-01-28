@@ -432,6 +432,8 @@ footer {
     align-items: center; }
     .dashboard__user .quoting img {
       max-width: 500px; }
+  .dashboard__user.porte .form-group label {
+    font-size: 15px; }
 
 .logo-dash {
   max-width: 80px; }

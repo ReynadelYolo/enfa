@@ -31,6 +31,14 @@
       max-width: 500px;
     }
   }
+
+  &.porte {
+    .form-group {
+      label {
+        font-size: 15px;
+      }
+    }
+  }
 }
 .logo-dash {
   max-width: 80px;

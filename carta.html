@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+</head>
+<body>
+<div class="container-fluid dashboard">
+    <!-- HEADER -->
+    <header class="d-flex flex-column">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <a href="index.html">
+                    <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+                </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <div class="dashboard__user-name">
+                    <ion-icon name="contact"></ion-icon>
+                    Buenas tardes <strong> Rubi Vega </strong>
+                </div>
+                <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN-->
+    <main>
+
+        <div class="row">
+
+            <section class="col-xs-12 col-md-3 dashboard__user-nav">
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="active"><a href="#"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+                        <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                        <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+                        <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                        <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                        <li><a href="#"><ion-icon name="heart"></ion-icon>Mis rutas</a></li>
+                        <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="col-md-9 dashboard__user porte" role="main">
+                <h3>Datos de Carga</h3>
+                <div class="m-portlet m-portlet--tab">
+                    <em>*Esta información es para tu transportista</em>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h4 class="text-uppercase">Carga</h4>
+                            <div class="form-group">
+                                <label for="">Domicilio de carga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Nombre cliente Carga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Contacto cliente carga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Fecha de carga</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Cita carga (hora)</label>
+                                <input type="time" class="form-control">
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-md-6">
+                            <h4 class="text-uppercase">Descarga</h4>
+                            <div class="form-group">
+                                <label for="">Nombre cliente de descarga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Domicilio de descarga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Fecha de descarga</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Cita descarga (hora)</label>
+                                <input type="time" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Contacto cliente de descarga</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Teléfono contacto cliente de descarga</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <hr>
+                            <div class="form-group">
+                                <label for="">Cantidad (Tarima/ Bulto)</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Peso / Mts2</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Valor de la mercancía</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Descripción de la mercancía a transportar: </label>
+                                <textarea name="" id="" cols="100" rows="10" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col text-right">
+                            <button class="btn btn-gradient-primary"> Enviar </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+<!-- FOOTER -->
+<footer class="container-fluid">
+    <div class="container links">
+        <section class="row">
+            <div class="col-xs-12 col-md-4">
+                <a href="marketplace.html">
+                    <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+                </a>
+                <p>
+                    Enfadelivery se encarga de proveer servicios de transporte mediante
+                    la ocupación de las capacidades disponibles en la fecha y hora que
+                    tu la necesitas.
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h6>Contáctanos</h6>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="pin"></ion-icon>
+                            Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="call"></ion-icon>
+                            44 247 15 218
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="mail"></ion-icon>
+                            hola@enfadelivery.com
+                        </a>
+                    </li>
+                    <!--<li>
+                      <a href="#">
+                        <ion-icon name="time"></ion-icon>
+                        Lunes - Sábado, 9:00 - 19:00 hrs
+                      </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h6>Enlaces</h6>
+                <ul>
+                    <li><a href="#">Quiero Enviar</a></li>
+                    <li><a href="#">Quiero Transportar</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+<!-- END FOOTER -->
+<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+</body>
+</html>
